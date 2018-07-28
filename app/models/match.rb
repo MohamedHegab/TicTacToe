@@ -7,5 +7,6 @@ class Match < ApplicationRecord
 
 			Game.start(uuid, opponent)
 			REDIS.set("matches", nil)
+		end
 	end
 end
